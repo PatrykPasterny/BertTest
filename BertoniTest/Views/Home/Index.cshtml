@@ -1,0 +1,35 @@
+﻿@model IEnumerable<BertoniTest.ViewModels.AlbumViewModel>
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <div id="ts-example">
+        <br />
+        <div class="album-selector">
+            <select id="selectAlbum">
+                @{
+                    foreach (var album in Model)
+                    {
+                        <option value="@album.Id" customAttribute="@album.Title">
+                            @album.Title
+                        </option>
+                    }
+                }
+            </select>
+
+            <div class="margin-top-25">
+                <button class="btn btn-primary" id="viewAlbum" onclick="ViewAlbumButtonClicked()"> View Album </button>
+            </div>
+        </div>
+        <br />
+        <div id="albumPhotos"></div>
+        <div style="visibility:hidden">
+            <select id="albumsSelector"></select>
+            <button onclick="TSButton()">Click</button>
+        </div>
+
+    </div>
+</div>

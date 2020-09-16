@@ -1,0 +1,27 @@
+﻿
+@model IEnumerable<BertoniTest.ViewModels.PhotoViewModel>
+
+<table class="bertoni-table">
+    <tr > 
+        <th>Title</th>
+        <th>Url</th>
+        <th>ThumbnailUrl</th>
+        <th>Actions</th>
+    </tr>
+    @foreach (var photo in Model)
+    {
+        <tr>
+            <td>@photo.Title</td>
+            <td>@photo.Url</td>
+            <td>@photo.ThumbnailUrl</td>
+            <td>
+                <button class="btn btn-primary" id="viewComments" onclick="ViewCommentsButtonClicked(@photo.Id)">View Comments</button>
+            </td>
+        </tr>
+    }
+</table>
+
+<div id="photoComments" class="margin-top-25">
+
+</div>
+

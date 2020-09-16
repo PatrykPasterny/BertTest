@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "gYKttRxgI9RpXxSyWSCIRj1fG79MfGuOkdwmf0U9Np0wJkOyv6eAkMetknEm0DFnCcic0VfI8nP5A2jy+unrlQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\admin\\newSource\\newRepos\\BertoniTest\\BertoniTest\\BertoniTest.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.typescript.msbuild\\4.0.2\\microsoft.typescript.msbuild.4.0.2.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
